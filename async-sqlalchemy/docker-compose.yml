@@ -9,6 +9,11 @@ services:
     ports:
       - 8000:8000
     environment:
+      # settings for db await
+      - DATABASE=postgres
+      - SQL_HOST=movie_db
+      - SQL_PORT=5432
+      # todo: URI transformer
       - DATABASE_URI=postgresql://hello_world:hello_world@movie_db/movie_db_dev
       - CAST_SERVICE_HOST_URL=http://cast_service:8000/api/v1/casts/
     depends_on:

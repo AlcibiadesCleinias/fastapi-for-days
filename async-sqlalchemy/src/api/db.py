@@ -1,7 +1,7 @@
 import os
 
 from sqlalchemy import (
-    Column, DateTime, Integer, MetaData, String, Table, create_engine, ARRAY
+    MetaData, create_engine
 )
 from databases import Database
 
