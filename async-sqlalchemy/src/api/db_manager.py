@@ -1,4 +1,4 @@
-from api.models import MovieIn, MovieOut, MovieUpdate
+from api.schemas import MovieIn, MovieOut, MovieUpdate
 from api.db import movies, database
 
 

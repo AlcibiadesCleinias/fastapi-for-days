@@ -1,7 +1,7 @@
 from typing import List
 from fastapi import APIRouter, HTTPException
 
-from api.models import MovieOut, MovieIn, MovieUpdate
+from api.schemas import MovieOut, MovieIn, MovieUpdate
 from api import db_manager
 from api.service import is_cast_present
 
