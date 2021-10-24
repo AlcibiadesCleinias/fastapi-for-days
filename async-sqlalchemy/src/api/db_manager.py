@@ -1,5 +1,6 @@
 from api.schemas import MovieIn, MovieOut, MovieUpdate
-from api.db import movies, database
+from api.db import database
+from api.models import movies
 
 
 async def add_movie(payload: MovieIn):
