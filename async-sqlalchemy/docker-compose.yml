@@ -9,7 +9,7 @@ services:
     ports:
       - 8000:8000
     environment:
-      # settings for db await
+      # settings for db await, instead a hardcoded URI
       - DATABASE=postgres
       - SQL_HOST=movie_db
       - SQL_PORT=5432

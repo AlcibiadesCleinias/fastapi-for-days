@@ -47,7 +47,7 @@ async def update_movie(id: int, payload: MovieUpdate):
 
     if 'casts_id' in update_data:
         for cast_id in payload.casts_id:
-            if not is_cast_present(cast_id):
+            if not await is_cast_present(cast_id):  # kinda requests to an another service
                 raise HTTPException(status_code=404, detail=f"Cast with given id:{cast_id} not found")
 
     movie_in_db = MovieIn(**movie)
